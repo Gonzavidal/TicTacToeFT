@@ -1,26 +1,19 @@
-import React from "react";
+import React from 'react';
+import Board from "./Board.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+
+
 
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
+		<>
+			<h1 className="text-center">Tic Tac Toe in React.js</h1>
+			<div className="position-absolute top-50 start-50 translate-middle text-center" id="set-game">
+				<Board/>
+			</div>
+		</>
+	)
 };
 
 export default Home;

@@ -1,12 +1,68 @@
+body {
+  background-color: #5c5753;
+  margin: 20px;
+}
 
-/* 
+h1 {
+  color: white;
+  padding-top: 50px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.board-row:after {
+  clear: both;
+  content: "";
+  text-align: center;
+  display: table;
+}
 
-*/
+.square {
+  border: 2px solid #827a74;
+  border-collapse: collapse;
+  background-color: #5c5753;
+  float: left;
+  font-weight: bold;
+  color: #827a74;
+  font-size: 50px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  width: 100px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.status,
+.restart {
+  color: white;
+  margin-top: 10px;
+}
+
+/** button styles **/
+.restart {
+  padding: 10px 15px;
+  color: black;
+  background-color: #fff;
+  border-color: black;
+  border-radius: 8px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.restart:active {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.restart:hover {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.restart:focus {
+  box-shadow: 0 0 0 0.2rem black;
+}
